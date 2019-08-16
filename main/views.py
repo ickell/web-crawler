@@ -39,7 +39,7 @@ def result(requests):
 
     final = ['f']*100
     for i in range(100):
-        final[i] = num[i] +'***' + title[i] +'***' + discount[i] +'***' +price1[i] +'***' + price2[i]
+        final[i] = num[i] +'^' + title[i] +'^' + discount[i] +'^' +price1[i] +'^' + price2[i]
 
     return render(requests, 'result.html', {'final':final})
 

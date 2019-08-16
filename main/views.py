@@ -37,9 +37,9 @@ def result(requests):
         except:
             continue
 
-            final = ['f']*100
-            for i in range(100):
-                final[i] = num[i] +'\t' + title[i] +'\t' + discount[i] +'\t' +price1[i] +'\t' + price2[i]
+    final = ['f']*100
+    for i in range(100):
+        final[i] = num[i] +'\t' + title[i] +'\t' + discount[i] +'\t' +price1[i] +'\t' + price2[i]
 
     return render(requests, 'result.html', {'final':final})
 

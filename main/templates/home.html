@@ -1,7 +1,7 @@
 <h1>목록 뽑으라 이거야</h1>
 <br>
 
-<form id="paper" method="GET" action="{%url 'result'%}">
+<form id="paper" method="POST" action="{%url 'result'%}">{% csrf_token %}
     
 
 		<br><br><br>
